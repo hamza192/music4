@@ -24,7 +24,7 @@ client.on('ready', () => {
     console.log(`[Codes] ${client.users.size}`)
     client.user.setStatus("idle")
 });
-const prefix = "1"
+const prefix = "4"
 client.on('message', async msg => {
 	if (msg.author.bot) return undefined;
 	if (!msg.content.startsWith(prefix)) return undefined;
@@ -68,7 +68,7 @@ client.on('message', async msg => {
 					const embed1 = new Discord.RichEmbed()
 			        .setDescription(`**الرجآء من حضرتك إختيآر رقم المقطع** :
 ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
-					.setFooter("CODES")
+					.setFooter("lego")
 					msg.channel.sendEmbed(embed1).then(message =>{message.delete(20000)})
 					
 					try {

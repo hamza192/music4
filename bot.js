@@ -226,7 +226,7 @@ if (message.content.startsWith(adminprefix + 'setT')) {
 });
 
 client.on("message", message => {
- if (message.content === `${prefix}`) {
+ if (message.content === `4help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
@@ -245,4 +245,19 @@ ${prefix}queue ⇏ لمعرفة قآئمة التشغيل
    }
    }); 
    
+
+
+
+
+client.on('ready', () => {
+  client.user.setGame(`4help لخواص البوت `,'https://www.twitch.');
+});
+
+
+
+
+
+
+
+
    client.login(process.env.BOT_TOKEN);

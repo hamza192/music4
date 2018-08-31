@@ -265,9 +265,7 @@ message.member.voiceChannel.join();
 
 
 
-epic.on('ready',async () => {
-  epic.channels.find(ch => ch.id === "483035376064397322" && ch.type === 'voice').join();
-});
+
 
 
 
